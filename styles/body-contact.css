@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "DS-digital";
+    src: url("fonts/DSDIGI.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+/*----------BAR-TOP---------------*/
+.bar-top {
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.bar-top:after {
+    content: '';
+    position: absolute;
+    background-color: green;
+    height: 3px;
+    left: 500px;
+    right: 500px;
+    border-radius: 100px;
+}
+
+
+
+
+/****************TITRE BOTTOM************/
+.titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-div-titre {
+    margin-top: 50px;
+    display: inline-block;
+    font-family: "DS-digital";
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.contact-div-titre:hover {
+    transform: translateY(-30px);
+
+}
+
+/*-----------LOCALISATION---------------------*/
+    .contact-div{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        padding:0px 5%;
+        gap:3%;
+        margin-bottom: 70px;
+    }
+    .contact-div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex:1;
+        text-align: center;
+        
+        
+    }
+    .contact-div span {
+    font-weight: 700;
+    font-size: 50px;
+    color: green;
+    
+        
+    }
+        .localisation-div{
+            align-items: center;
+    }
+
+        .localisation-div P{
+            width:70%;
+            font-size: 20px;
+            text-wrap: wrap;
+        
+
+        }
+    .formulaire-div{
+        border-radius: 10px;
+        padding: 3% 5% 3% 5%;
+        background-color: green;
+    }
+    .formulaire-div div{
+        
+        flex-grow: 1;
+        gap:15px;
+    }
+
+    .contact-div .formulaire-div span{
+        color:white;
+        margin-bottom:1%;
+    }
+    .formulaire-div input{
+        height:5vh;
+        padding-left:3%;
+        border-radius: 100px;
+        border:none;
+    }
+    .formulaire-div input:focus{
+        outline:none;
+    }
+    .formulaire-div textarea{
+        resize: none;
+        padding-left: 3%;
+        padding-top:3%;
+        border-radius: 10px;
+        border: none;
+    }
+     .formulaire-div textarea:focus{
+        outline:none;
+    }
+
+    
+/*------------BAR-BOTTOM--------------------*/
+.bar-bottom {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.bar-bottom:after {
+    content: '';
+    position: absolute;
+    background-color: green;
+    height: 3px;
+    left: 600px;
+    right: 600px;
+    border-radius: 100px;
+
+}
+
+/*------------------INFO-CREATEUR------------*/
+
+
+/*----------ANIMATION--------------*/
+@keyframes rotation {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-100%);
+
+    }
+}
+
+@keyframes pop {
+    0% {
+
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes mleft {
+    0% {
+        transform: translateX(-2000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes mright {
+    0% {
+        transform: translateX(2000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-property {
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
