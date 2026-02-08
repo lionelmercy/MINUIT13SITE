@@ -1,7 +1,7 @@
 @font-face {
     font-family: "DS-digital";
-    src: url("fonts/DSDIGI.woff2") format("woff2"),
-        url("fonts/DSDIGI.woff") format("woff");
+    src: url("../fonts/DSDIGI.woff2") format("woff2"),
+        url("../fonts/DSDIGI.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -55,7 +55,7 @@
 }
 .footer .footer-div-second p{
 
-    font-family: "DS-digital";
+    font-family: "DS-digital", sans-serif;
     
 }
 
