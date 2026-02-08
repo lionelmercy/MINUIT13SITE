@@ -131,7 +131,15 @@ body {
      .formulaire-div textarea:focus{
         outline:none;
     }
+    .contact-div i{
 
+        font-size:50px;
+    }
+
+    .contact-div .localisation-div i{
+        color:green;
+        padding:5% 0px;
+    }
     
 /*------------BAR-BOTTOM--------------------*/
 .bar-bottom {
