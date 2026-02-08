@@ -1,4 +1,10 @@
-
+@font-face {
+    font-family: "DS-digital";
+    src: url("fonts/DSDIGI.woff2") format("woff2"),
+        url("fonts/DSDIGI.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -85,5 +91,5 @@ header span{
     color: white;
     font-size: 25px;
     font-weight: bold;
-    font-family: DS-digital;
+    font-family: "DS-digital";
 }

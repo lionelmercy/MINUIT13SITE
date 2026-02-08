@@ -1,6 +1,7 @@
 @font-face {
     font-family: "DS-digital";
-    src: url("fonts/DSDIGI.woff") format("woff");
+    src: url("fonts/DSDIGI.woff2") format("woff2"),
+        url("fonts/DSDIGI.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -9,13 +10,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    
 }
 
 body {
     background-color: black;
     color: white;
-
+    font-family: Arial;
 }
 
 /*----------BAR-TOP---------------*/
@@ -45,7 +46,7 @@ body {
     align-items: center;
 }
 
-.contact-div-titre {
+body .contact-div-titre {
     margin-top: 50px;
     display: inline-block;
     font-family: "DS-digital";
