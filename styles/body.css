@@ -42,14 +42,11 @@ body {
     width: 100%;
     height: 600px;
     margin-bottom: 50px;
+    background-image: url("../image/cover.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
-.div-cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-}
 
 /*-----------------INFO------------------*/
 .info-main-div {
@@ -327,3 +324,113 @@ body .artiste-work-div div span {
 }
 
 /*-----------RESPONSIVITE--------------*/
+
+
+@media (max-width:550px){
+
+   
+        .bar-top:after {
+            content: '';
+            position: absolute;
+            background-color: green;
+            height: 3px;
+            left: 100px;
+            right: 100px;
+            border-radius: 100px;
+        }
+    
+        
+           .div-cover {
+               width: 100%;
+               height: 600px;
+               margin-bottom: 50px;
+               background-image: url("../image/cover2.jpg");
+               background-position: center;
+               background-size: cover;
+           }
+    
+        
+        .info-main-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+    
+        .info-main-div div {
+            
+            animation-name: pop;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 20px 25px rgba(51, 233, 0, 0.3);
+            border-radius: 25px;
+            padding: 30px 0px 20px 0px;
+    
+        }
+    
+        .info-main-div p {
+            width: 60%;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-top: 22px;
+    
+        }
+    
+        .info-main-div span {
+            margin-top:15px;
+            animation-name: pop;
+            animation-duration: 1s;
+            animation-delay: 1.5s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-out;
+            font-size: 25px;
+            font-weight: bold;
+            background: linear-gradient(90deg, rgba(51, 233, 0, 1) 0%, rgb(3, 189, 105) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    
+
+    
+        .bar-bottom:after {
+            content: '';
+            position: absolute;
+            background-color: green;
+            height: 3px;
+            left: 100px;
+            right: 100px;
+            border-radius: 100px;
+        }
+    
+   
+  
+        body .artiste-div-titre {
+    
+            display: inline-block;
+            font-family: "DS-digital", sans-serif;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            cursor: pointer;
+            transition: transform 1s ease;
+        }
+
+    
+    
+        .logo-bottom img {
+            width: 400px;
+            object-fit: cover;
+            object-position: center;
+    
+        }
+    
+
+}

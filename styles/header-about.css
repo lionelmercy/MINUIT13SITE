@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -16,6 +17,15 @@ header {
     right: 0;
     top: 0;
     z-index: 100;
+
+}
+
+.logo-header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .info-header {
@@ -28,7 +38,9 @@ header {
 
 .info-header li {
     position: relative;
+    list-style: none;
 }
+
 
 .info-header a {
 
@@ -37,9 +49,11 @@ header {
     color: rgb(255, 255, 255);
     position: relative;
 }
+
 .info-header li:nth-child(2) a {
     color: black;
     font-weight: 500;
+
 }
 
 .info-header li:nth-child(2):before {
@@ -78,9 +92,6 @@ header {
     transform: scaleX(1);
 }
 
-.info-header li {
-    list-style: none;
-}
 
 header img {
     width: 70px;
@@ -93,4 +104,114 @@ header span {
     font-size: 25px;
     font-weight: bold;
     font-family: "DS-digital", sans-serif;
+}
+
+/*-----------RESPONSIVITE--------------*/
+
+
+@media (max-width:550px) {
+
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        padding: 0px;
+        height: 50px;
+
+    }
+
+    .info-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+
+
+    }
+
+    .info-header li {
+        position: relative;
+        list-style: none;
+        font-size: 12px;
+    }
+
+
+    .info-header a {
+
+        text-decoration: none;
+        list-style: none;
+        color: rgb(255, 255, 255);
+        position: relative;
+    }
+
+    .info-header li:nth-child(2) a {
+        color: black;
+        font-weight: 500;
+
+    }
+
+    .info-header li:nth-child(2):before {
+
+        content: '';
+        background: linear-gradient(45deg, rgb(10, 139, 32), rgb(26, 233, 18));
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -10px;
+        right: -10px;
+        border-radius: 10px;
+        z-index: -1;
+
+
+    }
+
+
+    .info-header a:after {
+
+        content: '';
+        position: absolute;
+        background-color: green;
+        bottom: -15px;
+        left: 10px;
+        right: 10px;
+        height: 3px;
+        border-radius: 100px;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: opacity 0.3s ease-in, transform 0.3s ease-in-out;
+    }
+
+    .logo-header-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    header .logo-header-div img {
+        width: 50px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    header span {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "DS-digital", sans-serif;
+
+    }
+
+
+
 }
