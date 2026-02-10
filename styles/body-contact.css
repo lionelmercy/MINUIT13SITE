@@ -213,3 +213,133 @@ body .contact-div-titre {
     animation-delay: 2s;
     animation-fill-mode: both;
 }
+
+/*---------Responsivity------------------*/
+@media(max-width:550px){
+
+
+    body .contact-div-titre {
+    
+            display: inline-block;
+            font-family: "DS-digital", sans-serif;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            cursor: pointer;
+            transition: transform 1s ease;
+        }
+        .bar-top {
+            position: relative;
+            width: 100%;
+            margin-bottom:30px;
+        }
+                .bar-top:after {
+                    content: '';
+                    position: absolute;
+                    background-color: green;
+                    height: 3px;
+                    left: 100px;
+                    right: 100px;
+                    top:120px;
+                    border-radius: 100px;
+                }
+        
+         .bar-bottom {
+             position: relative;
+             width: 100%;
+             padding-bottom:0;
+         }
+
+         .contact-div {
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             padding: 0px 15px 0px 0px;
+             gap:40px;
+             margin-bottom: 50px;
+         }
+    
+         .contact-div div {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             flex: 1;
+             text-align: center;
+    
+    
+         }
+    
+         .contact-div span {
+             font-weight: 700;
+             font-size: 35px;
+             color: green;
+    
+    
+         }
+    
+         .localisation-div {
+             align-items: center;
+         }
+    
+         .localisation-div P {
+             width: 70%;
+             font-size: 15px;
+             text-wrap: wrap;
+    
+    
+         }
+    
+         .formulaire-div {
+             border-radius:0;
+             padding: 3% 5% 10% 5%;
+             background-color: green;
+            
+         }
+    
+         .formulaire-div div {
+    
+             flex-grow: 1;
+             gap: 15px;
+         }
+    
+         .contact-div .formulaire-div span {
+             color: white;
+             margin-bottom: 1%;
+         }
+    
+         .formulaire-div input {
+             height: 3vh;
+             padding-left: 3%;
+             border-radius: 100px;
+             border: none;
+         }
+    
+         .formulaire-div input:focus {
+             outline: none;
+         }
+    
+         .formulaire-div textarea {
+             resize: none;
+             padding-left: 3%;
+             padding-top: 3%;
+             border-radius: 10px;
+             border: none;
+         }
+    
+         .formulaire-div textarea:focus {
+             outline: none;
+         }
+    
+         .contact-div i {
+    
+             font-size: 40px;
+         }
+    
+         .contact-div .localisation-div i {
+             color: green;
+             padding: 5px 0px;
+         }
+         .contact-div .formulaire-div span{
+            padding-bottom:15px;
+         }
+}
